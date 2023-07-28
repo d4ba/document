@@ -15,25 +15,30 @@ ImageScaleTypes : "Crop" , "Fit" , "Slice" , "Stretch"
 ]]
 ```
 
--- Creating Folders
+## create a folder
+```lua
 local Folder = Category.Folder("TemplateFolder")
+```
 
--- Creating Components
-
--- Creating Labels
+## create label
+```lua
 local Label = Folder.Label("Your Text")
-
--- Creating Buttons
+```
+## create button
+```lua
 local Button = Folder.Button("Your Text",function()
-print("Pressed")
+    print("Pressed")
 end)
-
--- Creating Toggles
+```
+## create toggle
+```lua
 local Toggle = Folder.Toggle("Your Text",function(bool)
 print(bool)
 end,DefaultBoolValue)
-
--- Creating Sliders
+```
+## create slider
+```lua
 local Slider = Folder.Slider("Your Text",min,max,function(value)
 print(value)
 end,DefaultValue,isFloat) --isFloat is boolean
+```
