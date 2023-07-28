@@ -39,6 +39,6 @@ end,DefaultBoolValue)
 ## create slider
 ```lua
 local Slider = Folder.Slider("Your Text",min,max,function(value)
-print(value)
+    print(value)
 end,DefaultValue,isFloat) --isFloat is boolean
 ```
